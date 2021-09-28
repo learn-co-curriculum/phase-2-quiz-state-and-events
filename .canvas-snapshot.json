@@ -1,0 +1,815 @@
+{
+  "quiz": {
+    "id": 18314,
+    "title": "State and Events Quiz",
+    "html_url": "https://learning.flatironschool.com/courses/3264/quizzes/18314",
+    "mobile_url": "https://learning.flatironschool.com/courses/3264/quizzes/18314?force_user=1&persist_headless=1",
+    "description": "<p><span>It's time to check your knowledge! Use this quiz to create a custom study guide. Note any answers that were marked incorrect, so you can study the relevant material and try this quiz again. </span></p>\n<p><span>If you don't know the answer to a question, please do not guess. Instead, select \"I don't know\". It's OK not to know everything and to admit when we're unsure.</span></p>",
+    "quiz_type": "assignment",
+    "time_limit": null,
+    "timer_autosubmit_disabled": false,
+    "shuffle_answers": true,
+    "show_correct_answers": true,
+    "scoring_policy": "keep_highest",
+    "allowed_attempts": 3,
+    "one_question_at_a_time": true,
+    "question_count": 14,
+    "points_possible": 14.0,
+    "cant_go_back": false,
+    "access_code": null,
+    "ip_filter": null,
+    "due_at": null,
+    "lock_at": null,
+    "unlock_at": null,
+    "published": false,
+    "unpublishable": true,
+    "locked_for_user": true,
+    "lock_info": {
+      "missing_permission": "participate_as_student",
+      "asset_string": "quizzes:quiz_18314"
+    },
+    "lock_explanation": "This quiz is currently locked.",
+    "hide_results": null,
+    "show_correct_answers_at": null,
+    "hide_correct_answers_at": null,
+    "all_dates": [
+      {
+        "due_at": null,
+        "unlock_at": null,
+        "lock_at": null,
+        "base": true
+      }
+    ],
+    "can_unpublish": true,
+    "can_update": true,
+    "require_lockdown_browser": false,
+    "require_lockdown_browser_for_results": false,
+    "require_lockdown_browser_monitor": false,
+    "lockdown_browser_monitor_data": null,
+    "speed_grader_url": null,
+    "permissions": {
+      "manage": true,
+      "read": true,
+      "create": true,
+      "update": true,
+      "submit": true,
+      "preview": true,
+      "delete": true,
+      "read_statistics": true,
+      "grade": true,
+      "review_grades": true,
+      "view_answer_audits": true
+    },
+    "quiz_reports_url": "https://learning.flatironschool.com/api/v1/courses/3264/quizzes/18314/reports",
+    "quiz_statistics_url": "https://learning.flatironschool.com/api/v1/courses/3264/quizzes/18314/statistics",
+    "message_students_url": "https://learning.flatironschool.com/api/v1/courses/3264/quizzes/18314/submission_users/message",
+    "section_count": 1,
+    "important_dates": false,
+    "quiz_submission_versions_html_url": "https://learning.flatironschool.com/courses/3264/quizzes/18314/submission_versions",
+    "assignment_id": 124820,
+    "one_time_results": false,
+    "only_visible_to_overrides": false,
+    "assignment_group_id": 6202,
+    "show_correct_answers_last_attempt": true,
+    "version_number": 3,
+    "has_access_code": false,
+    "post_to_sis": false,
+    "migration_id": null,
+    "question_types": [
+      "multiple_choice_question",
+      "short_answer_question",
+      "true_false_question",
+      "fill_in_multiple_blanks_question",
+      "matching_question",
+      "multiple_answers_question"
+    ]
+  },
+  "questions": [
+    {
+      "quiz_id": 18314,
+      "id": 123936,
+      "quiz_group_id": null,
+      "assessment_question_id": 128169,
+      "position": null,
+      "question_name": "Accessing State",
+      "question_type": "multiple_choice_question",
+      "question_text": "<p><span>We're building a feature in a React application to allow users to search for particular items. When the user enters some text in the <code>SearchBar</code> component, the <code>ItemList</code> component should update which <code>Item</code> components are being displayed. Here's the component hierarchy:</span></p>\n<div>\n<pre><span>App</span><br><span>├───SearchBar</span><br><span>└───ItemList</span><br><span>    ├───Item</span><br><span>    └───Item</span></pre>\n<div><span>To build this feature, which component would need to hold the <code>searchText</code> state?</span></div>\n</div>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": 8054,
+          "text": "App",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": 870,
+          "text": "SearchBar",
+          "html": "",
+          "comments": "",
+          "comments_html": "<p>Since both the <span><code>SearchBar</code> and <code>ItemList</code> components need access to this state, this state would need to be held in their closest common parent, which is <code>App</code>.</span></p>",
+          "weight": 0.0
+        },
+        {
+          "id": 3526,
+          "text": "ItemList",
+          "html": "",
+          "comments": "",
+          "comments_html": "<p>Since both the <span><code>SearchBar</code> and <code>ItemList</code> components need access to this state, this state would need to be held in their closest common parent, which is <code>App</code>.</span></p>",
+          "weight": 0.0
+        },
+        {
+          "id": 9446,
+          "text": "Item",
+          "html": "",
+          "comments": "",
+          "comments_html": "<p>Since both the <span><code>SearchBar</code> and <code>ItemList</code> components need access to this state, this state would need to be held in their closest common parent, which is <code>App</code>.</span></p>",
+          "weight": 0.0
+        },
+        {
+          "id": 4091,
+          "text": "I don't know",
+          "html": "",
+          "comments": "",
+          "comments_html": "<p>Since both the <span><code>SearchBar</code> and <code>ItemList</code> components need access to this state, this state would need to be held in their closest common parent, which is <code>App</code>.</span></p>",
+          "weight": 0.0
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18314,
+      "id": 123937,
+      "quiz_group_id": null,
+      "assessment_question_id": 128170,
+      "position": null,
+      "question_name": "A controlled component derives its input values from ____.",
+      "question_type": "short_answer_question",
+      "question_text": "<p>A controlled component derives its input values from ____.</p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": "1236",
+          "text": "State",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100
+        },
+        {
+          "id": 4693,
+          "text": "state",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18314,
+      "id": 123938,
+      "quiz_group_id": null,
+      "assessment_question_id": 128178,
+      "position": null,
+      "question_name": "Any time you want to make a change (adding, updating or deleting an item) to an array that's being stored in state, you first need to make a copy of the array using the spread operator.",
+      "question_type": "true_false_question",
+      "question_text": "<div>\n<div><span>Any time you want to make a change (adding, updating or deleting an item) to an array that's being stored in state, you first need to make a copy of the array using the spread operator.</span></div>\n</div>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "comments": "",
+          "comments_html": "<p>Using the spread operator isn't always necessary when updating state with an array. The important thing is that whatever value is passed to the setter function for that state is a&nbsp;<strong>new object</strong> rather than a reference to an existing object.</p>\n<p>You can use other array methods, like <code>map</code> or <code>filter</code>, to produce a new object; it doesn't need to be the spread operator exclusively.</p>",
+          "text": "True",
+          "weight": 0,
+          "id": 2654
+        },
+        {
+          "comments": "",
+          "comments_html": "",
+          "text": "False",
+          "weight": 100,
+          "id": 5882
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18314,
+      "id": 123939,
+      "quiz_group_id": null,
+      "assessment_question_id": 128165,
+      "position": null,
+      "question_name": "Component Data",
+      "question_type": "fill_in_multiple_blanks_question",
+      "question_text": "<p>Fill in the blanks. [blank1] is data passed in to a component from a parent. [blank2] is data held within a component that can change over time.</p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": "5760",
+          "text": "props",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0,
+          "blank_id": "blank1"
+        },
+        {
+          "id": "4879",
+          "text": "Props",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0,
+          "blank_id": "blank1"
+        },
+        {
+          "id": "5449",
+          "text": "state",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0,
+          "blank_id": "blank2"
+        },
+        {
+          "id": "7882",
+          "text": "State",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0,
+          "blank_id": "blank2"
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18314,
+      "id": 123940,
+      "quiz_group_id": null,
+      "assessment_question_id": 128174,
+      "position": null,
+      "question_name": "Event listeners cannot be attached directly to React components.",
+      "question_type": "true_false_question",
+      "question_text": "<p><span>Event listeners cannot be attached directly to React components.</span></p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "comments": "",
+          "comments_html": "",
+          "text": "True",
+          "weight": 100,
+          "id": 299
+        },
+        {
+          "comments": "",
+          "comments_html": "<p><span>We can't attach event listeners directly to components, like this:</span></p>\n<pre><span>&lt;MyButton onClick={handleClick} /&gt;</span></pre>\n<p><span>Event listeners can only be attached to DOM elements in JSX, like this:</span></p>\n<pre><span>&lt;button onClick={handleClick}&gt;Click Me!&lt;/button&gt;</span></pre>",
+          "text": "False",
+          "weight": 0,
+          "id": 8724
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18314,
+      "id": 123941,
+      "quiz_group_id": null,
+      "assessment_question_id": 128177,
+      "position": null,
+      "question_name": "For each desired change to an array that's being stored in state, select the appropriate method/operator to use:",
+      "question_type": "matching_question",
+      "question_text": "<div>\n<div><span>For each desired change to an array that's being stored in state, select the most appropriate method/operator to use:</span></div>\n</div>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": 4123,
+          "text": "Adding an item to an array",
+          "left": "Adding an item to an array",
+          "right": "spread operator",
+          "comments": "",
+          "comments_html": "",
+          "match_id": 7349
+        },
+        {
+          "id": 8626,
+          "text": "Removing an item from an array",
+          "left": "Removing an item from an array",
+          "right": "filter",
+          "comments": "",
+          "comments_html": "",
+          "match_id": 6168
+        },
+        {
+          "id": 3743,
+          "text": "Updating an item in an array",
+          "left": "Updating an item in an array",
+          "right": "map",
+          "comments": "",
+          "comments_html": "",
+          "match_id": 4646
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": [
+        {
+          "text": "spread operator",
+          "match_id": 7349
+        },
+        {
+          "text": "filter",
+          "match_id": 6168
+        },
+        {
+          "text": "map",
+          "match_id": 4646
+        },
+        {
+          "text": "push",
+          "match_id": 5115
+        },
+        {
+          "text": "forEach",
+          "match_id": 3463
+        },
+        {
+          "text": "More than one of these can be used for this purpose",
+          "match_id": 51
+        }
+      ],
+      "matching_answer_incorrect_matches": "push\nforEach\nMore than one of these can be used for this purpose"
+    },
+    {
+      "quiz_id": 18314,
+      "id": 123942,
+      "quiz_group_id": null,
+      "assessment_question_id": 128179,
+      "position": null,
+      "question_name": "In order to change the state of a parent component from a child component, you would need to:",
+      "question_type": "multiple_choice_question",
+      "question_text": "<div>\n<div><span>In order to update state in a <strong>parent</strong> component from a <strong>child</strong> component, you would need to:</span></div>\n</div>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": 5988,
+          "text": "Pass a callback function as props from the parent to the child and call it from the child component.",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": 4479,
+          "text": "",
+          "html": "<p>Export the <code>setState()</code> function from the parent, and import it so that you can call it from the child component.</p>",
+          "comments": "",
+          "comments_html": "<p>We can't explicitly export our <code>setState()</code> function, but we can use a callback function to use our state as props in another component!</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 1469,
+          "text": "",
+          "html": "<p>Data only flows downward in React so it is not possible to change a parent component's state from a child component.</p>",
+          "comments": "",
+          "comments_html": "<p>Using inverse data flow, we are able to use props/state to update a parent component's state from it's children!</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 8705,
+          "text": "I don't know.",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18314,
+      "id": 123943,
+      "quiz_group_id": null,
+      "assessment_question_id": 128176,
+      "position": null,
+      "question_name": "Say we are storing a variable in state that consists of an array of values. If we update (i.e., mutate) the array and pass it to `setState`, React will *not* update state.",
+      "question_type": "true_false_question",
+      "question_text": "<div>\n<div>Given the following component:</div>\n<pre><code>\nfunction App() {\n  const [numbers, setNumbers] = useState([])\n  \n  function addNumber() {\n    numbers.push(1)\n    setNumbers(numbers)\n  }\n\n  return (\n    &lt;button onClick={addNumber}&gt;Add&lt;/button&gt;\n  );\n}\n        </code></pre>\n<p>Clicking the button would cause the component to re-render.</p>\n</div>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "comments": "",
+          "comments_html": "<p>Since we're passing a reference to the same <code>numbers</code> variable to <code>setNumbers</code>, React will not re-render. We'd need to make a copy of the <code>numbers</code> array before calling <code>setNumbers</code>.</p>",
+          "text": "True",
+          "weight": 0,
+          "id": 5697
+        },
+        {
+          "comments": "",
+          "comments_html": "<p>Correct!</p>\n<p>Since we're passing a reference to the same <code>numbers</code> variable to <code>setNumbers</code>, React will not re-render. We'd need to make a copy of the <code>numbers</code> array before calling <code>setNumbers</code>.</p>",
+          "text": "False",
+          "weight": 100,
+          "id": 8589
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18314,
+      "id": 123944,
+      "quiz_group_id": null,
+      "assessment_question_id": 128173,
+      "position": null,
+      "question_name": "Setting up a controlled form requires: (select all)",
+      "question_type": "multiple_answers_question",
+      "question_text": "<p>Setting up a controlled form<span>&nbsp;</span><strong>requires</strong>: (select all)</p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": "2184",
+          "text": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0,
+          "html": "<p>Setting up an event listener to update state as the user enters data in an input field.</p>"
+        },
+        {
+          "id": "8680",
+          "text": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0,
+          "html": "<p>Updating the information in an input field to reflect state.</p>"
+        },
+        {
+          "id": "8930",
+          "text": "",
+          "comments": "",
+          "comments_html": "<p>While holding state in a parent component is typically best practice, it is not required.</p>",
+          "weight": 0.0,
+          "html": "<p>Moving state out of the form component and into a parent component.</p>"
+        },
+        {
+          "id": "7863",
+          "text": "",
+          "comments": "",
+          "comments_html": "<p>Validating user information is helpful, and can save you a ton of time later, however it is not required when setting up a controlled form.</p>",
+          "weight": 0.0,
+          "html": "<p>Validating the information the user enters.</p>"
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18314,
+      "id": 123945,
+      "quiz_group_id": null,
+      "assessment_question_id": 128168,
+      "position": null,
+      "question_name": "When setting up your component hierarchy, you should make sure that any components that need access to state that's stored in another component are direct or indirect children of that component.",
+      "question_type": "true_false_question",
+      "question_text": "<p>When setting up your component hierarchy, you should make sure that any components that need access to state that's stored in another component are siblings of that component.</p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "comments": "",
+          "comments_html": "<p>It's best to store state in the closest common parent of the components that need access to it.&nbsp;</p>",
+          "text": "True",
+          "weight": 0,
+          "id": 2160
+        },
+        {
+          "comments": "",
+          "comments_html": "",
+          "text": "False",
+          "weight": 100,
+          "id": 5448
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18314,
+      "id": 123946,
+      "quiz_group_id": null,
+      "assessment_question_id": 128167,
+      "position": null,
+      "question_name": "When UseState() is called, it automatically returns a function with the name SetState.",
+      "question_type": "true_false_question",
+      "question_text": "<p><span>When&nbsp;</span><code>useState()</code><span>&nbsp;is called, it automatically returns a function with the name&nbsp;</span><code>setState</code><span>.</span></p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "comments": "",
+          "comments_html": "<p>Calling <code>useState()</code> returns an array with two elements: a value and a setter function. You can use any variable name you like for these elements.</p>",
+          "text": "True",
+          "weight": 0,
+          "id": 8560
+        },
+        {
+          "comments": "",
+          "comments_html": "",
+          "text": "False",
+          "weight": 100,
+          "id": 9984
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18314,
+      "id": 123947,
+      "quiz_group_id": null,
+      "assessment_question_id": 128166,
+      "position": null,
+      "question_name": "When UseState() is called, it takes _________ (one/two) argument(s) that represent(s):",
+      "question_type": "multiple_choice_question",
+      "question_text": "<ol start=\"2\">\n<li class=\"code-line\" data-line=\"23\">When<span>&nbsp;</span><code>useState()</code><span>&nbsp;</span>is called, it takes _________ (one/two) argument(s) that represent(s):</li>\n</ol>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": 1070,
+          "text": "One; the initial value of the data to be stored in state.",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": 9204,
+          "text": "",
+          "html": "<p>Two; the name of the attribute to be stored in state and its initial value.</p>",
+          "comments": "",
+          "comments_html": "<p>The initial value of the state is actually already set when you declare your useState hook!</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 6589,
+          "text": "I don't know.",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18314,
+      "id": 123948,
+      "quiz_group_id": null,
+      "assessment_question_id": 128171,
+      "position": null,
+      "question_name": "Which of the following is not an advantage of using controlled components?",
+      "question_type": "multiple_choice_question",
+      "question_text": "<p><span>Which of the following is&nbsp;</span><strong><em>not</em></strong><span>&nbsp;an advantage of using controlled components?</span></p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": 5625,
+          "text": "",
+          "html": "<p>It helps us keep the amount of code we need to a minimum.</p>",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": 265,
+          "text": "",
+          "html": "<p>It allows us to keep the code that handles logic separate from the code that handles display of data.</p>",
+          "comments": "",
+          "comments_html": "<p>Separation of concerns is a huge benefit of using controlled forms!</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 5639,
+          "text": "",
+          "html": "<p>It allows us to ensure that input values are valid.</p>",
+          "comments": "",
+          "comments_html": "<p>By using a controlled form, it easily allows us to implement validations.</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 354,
+          "text": "",
+          "html": "<p>It allows us to make the input values available to other components in our app.</p>",
+          "comments": "",
+          "comments_html": "<p>When using a controlled form, we are able to use state to pass the form values into other components!</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 9399,
+          "text": "I don't know.",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18314,
+      "id": 123949,
+      "quiz_group_id": null,
+      "assessment_question_id": 128175,
+      "position": null,
+      "question_name": "Which of the following shows the correct way to set up an event listener that passes a value to the callback function:",
+      "question_type": "multiple_choice_question",
+      "question_text": "<div>\n<div><span>Which of the following shows the correct way to set up an event listener that passes a value to the callback function:</span></div>\n</div>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": 7290,
+          "text": "",
+          "html": "<pre><code><span>function</span> <span>MyButton</span><span>() {</span></code><br><code><span>&nbsp; function</span> <span>handleClick</span><span>(</span><span>val</span><span>) {</span></code><br><code><span>&nbsp; &nbsp; alert</span><span>(</span><span>val</span> <span>+</span> <span>\"!!\"</span><span>)</span></code><br><code><span>  }</span></code><br><code><span>&nbsp; return</span><span> (</span></code><br><code><span>&nbsp; &nbsp; &lt;</span><span>div</span><span>&gt;</span></code><br><code><span>&nbsp; &nbsp; &nbsp; &lt;</span><span>button</span> <span>onClick</span><span>=</span><span>{</span><span>() </span><span>=&gt;</span> <span>handleClick</span><span>(</span><span>\"Hello World\"</span><span>)</span><span>}</span><span>&gt;</span></code><br>&nbsp;&nbsp; &nbsp;&nbsp; <code><span>Click Me!</span></code><br>&nbsp;&nbsp; &nbsp;<code><span>&lt;/</span><span>button</span><span>&gt;</span></code><br><code><span>&nbsp; &nbsp; &lt;/</span><span>div</span><span>&gt;</span></code><br><code><span> );</span></code><br><code><span>} </span></code></pre>",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": 9911,
+          "text": "",
+          "html": "<pre><code><span>function</span> <span>MyButton</span><span>() {</span></code><br><code><span>&nbsp; function</span> <span>handleClick</span><span>(</span><span>val</span><span>) {</span></code><br><code><span>&nbsp; &nbsp; alert</span><span>(</span><span>val</span> <span>+</span> <span>\"!!\"</span><span>)</span></code><br><code><span>  }</span></code><br><code><span>&nbsp; return</span><span> (</span></code><br><code><span>&nbsp; &nbsp; &lt;</span><span>div</span><span>&gt;</span></code><br><code><span>&nbsp; &nbsp; &nbsp; &lt;</span><span>button</span> <span>onClick</span><span>=</span><span>{</span><span>handleClick</span><span>(</span><span>\"Hello World\"</span><span>)</span><span>}</span><span>&gt;</span></code><br>&nbsp;&nbsp; &nbsp;&nbsp; <code><span>Click Me!</span></code><br>&nbsp;&nbsp; &nbsp;<code><span>&lt;/</span><span>button</span><span>&gt;</span></code><br><code><span>&nbsp; &nbsp; &lt;/</span><span>div</span><span>&gt;</span></code><br><code><span> );</span></code><br><code><span>} </span></code></pre>",
+          "comments": "",
+          "comments_html": "<p>Because we are passing the value&nbsp;<code><span>(</span><span>\"Hello World\"</span><span>)</span></code> into the handleClick, it is immediately invoking the function, before we even click!</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 8986,
+          "text": "",
+          "html": "<pre><code><span>function</span> <span>MyButton</span><span>() {</span></code><br><code><span>&nbsp; function</span> <span>handleClick</span><span>(</span><span>val</span><span>) {</span></code><br><code><span>&nbsp; &nbsp; alert</span><span>(</span><span>val</span> <span>+</span> <span>\"!!\"</span><span>)</span></code><br><code><span>  }</span></code><br><code><span>&nbsp; return</span><span> (</span></code><br><code><span>&nbsp; &nbsp; &lt;</span><span>div</span><span>&gt;</span></code><br><code><span>&nbsp; &nbsp; &nbsp; &lt;</span><span>button</span> <span>onClick</span><span>=</span><span>{</span><span>handleClick</span><span>}</span><span>&gt;</span></code><br>&nbsp;&nbsp; &nbsp;&nbsp; <code><span>Click Me!</span></code><br>&nbsp;&nbsp; &nbsp;<code><span>&lt;/</span><span>button</span><span>&gt;</span></code><br><code><span>&nbsp; &nbsp; &lt;/</span><span>div</span><span>&gt;</span></code><br><code><span> );</span></code><br><code><span>} </span></code></pre>",
+          "comments": "",
+          "comments_html": "<p>Oops! We haven't passed anything into our <code>handleClick</code> function, so this will return <code>[object Object]!!</code></p>",
+          "weight": 0.0
+        },
+        {
+          "id": 9698,
+          "text": "",
+          "html": "<p>More than one of the above will work.</p>",
+          "comments": "",
+          "comments_html": "<p>Try this out in your console! Only one of the options will give us our desired result.</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 1767,
+          "text": "I don't know.",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    }
+  ]
+}
