@@ -344,7 +344,7 @@
           "right": "spread operator",
           "comments": "",
           "comments_html": "",
-          "match_id": 9510
+          "match_id": 5677
         },
         {
           "id": "2196",
@@ -353,7 +353,7 @@
           "right": "filter",
           "comments": "",
           "comments_html": "",
-          "match_id": 5185
+          "match_id": 1758
         },
         {
           "id": "6370",
@@ -362,7 +362,7 @@
           "right": "map",
           "comments": "",
           "comments_html": "",
-          "match_id": 7843
+          "match_id": 4781
         }
       ],
       "variables": null,
@@ -372,15 +372,15 @@
       "matches": [
         {
           "text": "spread operator",
-          "match_id": 9510
+          "match_id": 5677
         },
         {
           "text": "filter",
-          "match_id": 5185
+          "match_id": 1758
         },
         {
           "text": "map",
-          "match_id": 7843
+          "match_id": 4781
         }
       ],
       "matching_answer_incorrect_matches": ""
@@ -393,7 +393,7 @@
       "position": null,
       "question_name": "Information Flow",
       "question_type": "multiple_choice_question",
-      "question_text": "<p>Given the following components:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Parent</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">setIsOn</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"kc\">true</span><span class=\"p\">);</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">Child</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n\n<span class=\"kd\">function</span> <span class=\"nx\">Child</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span><span class=\"p\">&gt;</span>Togglebutton&gt;;\n}\n</code></pre></div>\n<p>In order to update the <code>isOn</code> state in the <code>component when the button is\nclicked in the</code> component, you would need to:</p>",
+      "question_text": "<p>Given the following components:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Parent</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">setIsOn</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"kc\">true</span><span class=\"p\">);</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">Child</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n\n<span class=\"kd\">function</span> <span class=\"nx\">Child</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span><span class=\"p\">&gt;</span>Toggle<span class=\"p\">&lt;/</span><span class=\"nt\">button</span><span class=\"p\">&gt;;</span>\n<span class=\"p\">}</span>\n</code></pre></div>\n<p>In order to update the <code>isOn</code> state in the <code>&lt;Parent /&gt;</code> component when the\nbutton is clicked in the <code>&lt;Child /&gt;</code> component, you would need to:</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -403,27 +403,27 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/6667/pages/react-information-flow\">React Information Flow</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 2111,
+          "id": 3868,
           "text": "",
-          "html": "<p>Pass a callback function as a prop from the <code>to the</code>, and call it from the\n`` component.</p>",
+          "html": "<p>Pass a callback function as a prop from the <code>&lt;Parent /&gt;</code> to the <code>&lt;Child /&gt;</code>, and\ncall it from the `` component.</p>",
           "comments": "",
-          "comments_html": "<p>Right! We'd need to do something like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Parent</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">setIsOn</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"kc\">true</span><span class=\"p\">);</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">Child</span> <span class=\"na\">isOn</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">isOn</span><span class=\"si\">}</span> <span class=\"na\">onToggleClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">setIsOn</span><span class=\"si\">}</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n\n<span class=\"kd\">function</span> <span class=\"nx\">Child</span><span class=\"p\">({</span> <span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">onToggleClick</span> <span class=\"p\">})</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">()</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">onToggleClick</span><span class=\"p\">(</span><span class=\"o\">!</span><span class=\"nx\">isOn</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Togglebutton&gt;;\n}\n</code></pre></div>",
+          "comments_html": "<p>Right! We'd need to do something like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Parent</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">setIsOn</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"kc\">true</span><span class=\"p\">);</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">Child</span> <span class=\"na\">isOn</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">isOn</span><span class=\"si\">}</span> <span class=\"na\">onToggleClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">setIsOn</span><span class=\"si\">}</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n\n<span class=\"kd\">function</span> <span class=\"nx\">Child</span><span class=\"p\">({</span> <span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">onToggleClick</span> <span class=\"p\">})</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">()</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">onToggleClick</span><span class=\"p\">(</span><span class=\"o\">!</span><span class=\"nx\">isOn</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Toggle<span class=\"p\">&lt;/</span><span class=\"nt\">button</span><span class=\"p\">&gt;;</span>\n<span class=\"p\">}</span>\n</code></pre></div>",
           "weight": 100.0
         },
         {
-          "id": 5569,
+          "id": 2695,
           "text": "",
-          "html": "<p>Export the <code>setState()</code> function from the <code>, and import it so that you can call\nit from the</code> component.</p>",
+          "html": "<p>Export the <code>setState()</code> function from the <code>&lt;Parent /&gt;</code>, and import it so that\nyou can call it from the <code>&lt;Child /&gt;</code> component.</p>",
           "comments": "",
-          "comments_html": "<p>We can't explicitly export our <code>setState()</code> function, but we can use a callback\nfunction to use our state as props in another component! We'd need to do\nsomething like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Parent</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">setIsOn</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"kc\">true</span><span class=\"p\">);</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">Child</span> <span class=\"na\">isOn</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">isOn</span><span class=\"si\">}</span> <span class=\"na\">onToggleClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">setIsOn</span><span class=\"si\">}</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n\n<span class=\"kd\">function</span> <span class=\"nx\">Child</span><span class=\"p\">({</span> <span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">onToggleClick</span> <span class=\"p\">})</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">()</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">onToggleClick</span><span class=\"p\">(</span><span class=\"o\">!</span><span class=\"nx\">isOn</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Togglebutton&gt;;\n}\n</code></pre></div>",
+          "comments_html": "<p>We can't explicitly export our <code>setState()</code> function, but we can use a\ncallback function to use our state as props in another component! We'd need to\ndo something like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Parent</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">setIsOn</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"kc\">true</span><span class=\"p\">);</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">Child</span> <span class=\"na\">isOn</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">isOn</span><span class=\"si\">}</span> <span class=\"na\">onToggleClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">setIsOn</span><span class=\"si\">}</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n\n<span class=\"kd\">function</span> <span class=\"nx\">Child</span><span class=\"p\">({</span> <span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">onToggleClick</span> <span class=\"p\">})</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">()</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">onToggleClick</span><span class=\"p\">(</span><span class=\"o\">!</span><span class=\"nx\">isOn</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Toggle<span class=\"p\">&lt;/</span><span class=\"nt\">button</span><span class=\"p\">&gt;;</span>\n<span class=\"p\">}</span>\n</code></pre></div>",
           "weight": 0.0
         },
         {
-          "id": 8134,
+          "id": 9920,
           "text": "",
-          "html": "<p>Data only flows downward in React so it is not possible to change the<code>\ncomponent's state from the</code> component.</p>",
+          "html": "<p>Data only flows downward in React so it is not possible to change the\n<code>&lt;Parent /&gt;</code> component's state from the <code>&lt;Child /&gt;</code> component.</p>",
           "comments": "",
-          "comments_html": "<p>Using inverse data flow, we are able to use props/state to update a parent\ncomponent's state from its children! We could do something like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Parent</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">setIsOn</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"kc\">true</span><span class=\"p\">);</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">Child</span> <span class=\"na\">isOn</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">isOn</span><span class=\"si\">}</span> <span class=\"na\">onToggleClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">setIsOn</span><span class=\"si\">}</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n\n<span class=\"kd\">function</span> <span class=\"nx\">Child</span><span class=\"p\">({</span> <span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">onToggleClick</span> <span class=\"p\">})</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">()</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">onToggleClick</span><span class=\"p\">(</span><span class=\"o\">!</span><span class=\"nx\">isOn</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Togglebutton&gt;;\n}\n</code></pre></div>",
+          "comments_html": "<p>Using inverse data flow, we are able to use props/state to update a parent\ncomponent's state from its children! We could do something like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Parent</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">setIsOn</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"kc\">true</span><span class=\"p\">);</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">Child</span> <span class=\"na\">isOn</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">isOn</span><span class=\"si\">}</span> <span class=\"na\">onToggleClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">setIsOn</span><span class=\"si\">}</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n\n<span class=\"kd\">function</span> <span class=\"nx\">Child</span><span class=\"p\">({</span> <span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">onToggleClick</span> <span class=\"p\">})</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">()</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">onToggleClick</span><span class=\"p\">(</span><span class=\"o\">!</span><span class=\"nx\">isOn</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Toggle<span class=\"p\">&lt;/</span><span class=\"nt\">button</span><span class=\"p\">&gt;;</span>\n<span class=\"p\">}</span>\n</code></pre></div>",
           "weight": 0.0
         },
         {
@@ -450,7 +450,7 @@
       "position": null,
       "question_name": "State and Arrays",
       "question_type": "true_false_question",
-      "question_text": "<p>Given the following component:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">App</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">numbers</span><span class=\"p\">,</span> <span class=\"nx\">setNumbers</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">([]);</span>\n\n  <span class=\"kd\">function</span> <span class=\"nx\">addNumber</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n    <span class=\"nx\">numbers</span><span class=\"p\">.</span><span class=\"nx\">push</span><span class=\"p\">(</span><span class=\"mi\">1</span><span class=\"p\">);</span>\n    <span class=\"nx\">setNumbers</span><span class=\"p\">(</span><span class=\"nx\">numbers</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">addNumber</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Addbutton&gt;;\n}\n</code></pre></div>\n<p>Clicking the button would cause the component to re-render.</p>",
+      "question_text": "<p>Given the following component:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">App</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">numbers</span><span class=\"p\">,</span> <span class=\"nx\">setNumbers</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">([]);</span>\n\n  <span class=\"kd\">function</span> <span class=\"nx\">addNumber</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n    <span class=\"nx\">numbers</span><span class=\"p\">.</span><span class=\"nx\">push</span><span class=\"p\">(</span><span class=\"mi\">1</span><span class=\"p\">);</span>\n    <span class=\"nx\">setNumbers</span><span class=\"p\">(</span><span class=\"nx\">numbers</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">addNumber</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Add<span class=\"p\">&lt;/</span><span class=\"nt\">button</span><span class=\"p\">&gt;;</span>\n<span class=\"p\">}</span>\n</code></pre></div>\n<p>Clicking the button would cause the component to re-render.</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -499,7 +499,7 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/6667/pages/controlled-components\">Controlled Components</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 1393,
+          "id": "1393",
           "text": "",
           "comments": "",
           "comments_html": "<p>Right! To ensure that our <strong>component state</strong> always matches the data in\nthe <strong>form</strong> , we need to update state any time the input changes:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"p\">&lt;</span><span class=\"nt\">input</span> <span class=\"na\">type</span><span class=\"p\">=</span><span class=\"s\">\"text\"</span> <span class=\"na\">onChange</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">(</span><span class=\"nx\">e</span><span class=\"p\">)</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">setName</span><span class=\"p\">(</span><span class=\"nx\">e</span><span class=\"p\">.</span><span class=\"nx\">target</span><span class=\"p\">.</span><span class=\"nx\">value</span><span class=\"p\">)</span><span class=\"si\">}</span> <span class=\"na\">value</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">name</span><span class=\"si\">}</span> <span class=\"p\">/&gt;</span>\n</code></pre></div>",
@@ -507,7 +507,7 @@
           "html": "<p>Setting up an event listener to update state as the user enters data in an input\nfield.</p>"
         },
         {
-          "id": 1730,
+          "id": "1730",
           "text": "",
           "comments": "",
           "comments_html": "<p>Correct! To ensure our <strong>form</strong> always matches our <strong>component state</strong> , we need\nto synchronize the <strong>value</strong> of each input field with state:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"p\">&lt;</span><span class=\"nt\">input</span> <span class=\"na\">type</span><span class=\"p\">=</span><span class=\"s\">\"text\"</span> <span class=\"na\">onChange</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">(</span><span class=\"nx\">e</span><span class=\"p\">)</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">setName</span><span class=\"p\">(</span><span class=\"nx\">e</span><span class=\"p\">.</span><span class=\"nx\">target</span><span class=\"p\">.</span><span class=\"nx\">value</span><span class=\"p\">)</span><span class=\"si\">}</span> <span class=\"na\">value</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">name</span><span class=\"si\">}</span> <span class=\"p\">/&gt;</span>\n</code></pre></div>",
@@ -515,7 +515,7 @@
           "html": "<p>Updating the information in an input field to reflect state.</p>"
         },
         {
-          "id": 2784,
+          "id": "2784",
           "text": "",
           "comments": "",
           "comments_html": "<p>While holding state in a parent component is necessary in some scenarios, such\nas when multiple components depend on the same state from the form input fields,\nit is not required.</p>",
@@ -523,7 +523,7 @@
           "html": "<p>Moving state out of the form component and into a parent component.</p>"
         },
         {
-          "id": 6822,
+          "id": "6822",
           "text": "",
           "comments": "",
           "comments_html": "<p>Validating user information is helpful, but it is not required when setting up a\ncontrolled form.</p>",
@@ -683,7 +683,7 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/6667/pages/controlled-components\">Controlled Components</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 4404,
+          "id": "4404",
           "text": "",
           "comments": "",
           "comments_html": "<p>Using controlled components typically involves writing more code than\nuncontrolled components, but there are several advantages that can make the\nextra code worthwhile!</p>",
@@ -691,7 +691,7 @@
           "html": "<p>It helps us keep the amount of code we need to a minimum.</p>"
         },
         {
-          "id": 2675,
+          "id": "2675",
           "text": "",
           "comments": "",
           "comments_html": "<p>Separation of concerns is a huge benefit of using controlled forms!</p>",
@@ -699,7 +699,7 @@
           "html": "<p>It allows us to keep the code that handles logic separate from the code that\nhandles display of data.</p>"
         },
         {
-          "id": 8852,
+          "id": "8852",
           "text": "",
           "comments": "",
           "comments_html": "<p>By using a controlled form, it easily allows us to implement validations.</p>",
@@ -707,7 +707,7 @@
           "html": "<p>It allows us to ensure that input values are valid.</p>"
         },
         {
-          "id": 5218,
+          "id": "5218",
           "text": "",
           "comments": "",
           "comments_html": "<p>When using a controlled form, we are able to use state to pass the form values\ninto other components!</p>",
@@ -715,7 +715,7 @@
           "html": "<p>It allows us to make the input values available to other components in our app.</p>"
         },
         {
-          "id": 5278,
+          "id": "5278",
           "text": "",
           "comments": "",
           "comments_html": "",
@@ -748,25 +748,25 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/6667/pages/react-information-flow\">React Information Flow</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 3455,
+          "id": 6049,
           "text": "",
-          "html": "<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">MyButton</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"nx\">val</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"nx\">val</span> <span class=\"o\">+</span> <span class=\"dl\">\"</span><span class=\"s2\">!!</span><span class=\"dl\">\"</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n  <span class=\"k\">return</span> <span class=\"p\">(</span>\n    <span class=\"p\">&lt;</span><span class=\"nt\">div</span><span class=\"p\">&gt;</span>\n      <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">()</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"dl\">\"</span><span class=\"s2\">Hello World</span><span class=\"dl\">\"</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Click Me!button&gt;\n    div&gt;\n  );\n}\n</code></pre></div>",
+          "html": "<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">MyButton</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"nx\">val</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"nx\">val</span> <span class=\"o\">+</span> <span class=\"dl\">\"</span><span class=\"s2\">!!</span><span class=\"dl\">\"</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n  <span class=\"k\">return</span> <span class=\"p\">(</span>\n    <span class=\"p\">&lt;</span><span class=\"nt\">div</span><span class=\"p\">&gt;</span>\n      <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">()</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"dl\">\"</span><span class=\"s2\">Hello World</span><span class=\"dl\">\"</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Click Me!<span class=\"p\">&lt;/</span><span class=\"nt\">button</span><span class=\"p\">&gt;</span>\n    div&gt;\n  );\n}\n</code></pre></div>",
           "comments": "",
           "comments_html": "<p>Nice! Remember, <code>onClick</code> expects a callback function as an argument. By\ndefining an arrow function here, we're able to pass a callback function that\nwill call the <code>handleClick</code> function with the correct data.</p>",
           "weight": 100.0
         },
         {
-          "id": 8696,
+          "id": 300,
           "text": "",
-          "html": "<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">MyButton</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"nx\">val</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"nx\">val</span> <span class=\"o\">+</span> <span class=\"dl\">\"</span><span class=\"s2\">!!</span><span class=\"dl\">\"</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n  <span class=\"k\">return</span> <span class=\"p\">(</span>\n    <span class=\"p\">&lt;</span><span class=\"nt\">div</span><span class=\"p\">&gt;</span>\n      <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"dl\">\"</span><span class=\"s2\">Hello World</span><span class=\"dl\">\"</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Click Me!button&gt;\n    div&gt;\n  );\n}\n</code></pre></div>",
+          "html": "<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">MyButton</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"nx\">val</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"nx\">val</span> <span class=\"o\">+</span> <span class=\"dl\">\"</span><span class=\"s2\">!!</span><span class=\"dl\">\"</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n  <span class=\"k\">return</span> <span class=\"p\">(</span>\n    <span class=\"p\">&lt;</span><span class=\"nt\">div</span><span class=\"p\">&gt;</span>\n      <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"dl\">\"</span><span class=\"s2\">Hello World</span><span class=\"dl\">\"</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Click Me!<span class=\"p\">&lt;/</span><span class=\"nt\">button</span><span class=\"p\">&gt;</span>\n    div&gt;\n  );\n}\n</code></pre></div>",
           "comments": "",
           "comments_html": "<p>Remember, <code>onClick</code> expects a callback function as an argument. In this example,\nwe're <strong>invoking</strong> <code>handleClick</code> and passing its return value (<code>undefined</code>) to\nthe <code>onClick</code> listener, so the behavior of this component will be to:</p>\n\n<ul>\n<li>Immediately display a <code>Hello World!!</code> in the console, before the button is clicked</li>\n<li>Do nothing when the button is actually clicked</li>\n</ul>",
           "weight": 0.0
         },
         {
-          "id": 3668,
+          "id": 5855,
           "text": "",
-          "html": "<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">MyButton</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"nx\">val</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"nx\">val</span> <span class=\"o\">+</span> <span class=\"dl\">\"</span><span class=\"s2\">!!</span><span class=\"dl\">\"</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n  <span class=\"k\">return</span> <span class=\"p\">(</span>\n    <span class=\"p\">&lt;</span><span class=\"nt\">div</span><span class=\"p\">&gt;</span>\n      <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Click Me!button&gt;\n    div&gt;\n  );\n}\n</code></pre></div>",
+          "html": "<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">MyButton</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"nx\">val</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"nx\">val</span> <span class=\"o\">+</span> <span class=\"dl\">\"</span><span class=\"s2\">!!</span><span class=\"dl\">\"</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n  <span class=\"k\">return</span> <span class=\"p\">(</span>\n    <span class=\"p\">&lt;</span><span class=\"nt\">div</span><span class=\"p\">&gt;</span>\n      <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Click Me!<span class=\"p\">&lt;/</span><span class=\"nt\">button</span><span class=\"p\">&gt;</span>\n    div&gt;\n  );\n}\n</code></pre></div>",
           "comments": "",
           "comments_html": "<p>Not quite. When we click the button, the argument that will be passed to\nthe<code>handleClick</code> function is the <code>event</code> object, not the string <code>Hello World</code> as\nwe would like. So this will log <code>[object Object]!!</code></p>",
           "weight": 0.0
