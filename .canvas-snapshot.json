@@ -85,59 +85,58 @@
       "id": 366259,
       "quiz_id": 53472,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 1,
+      "assessment_question_id": 632128,
+      "position": null,
       "question_name": "React Information Flow",
       "question_type": "multiple_choice_question",
-      "question_text": "<p>We're building a feature in a React application to allow users to search for\nparticular items. When the user enters some text in the <code>SearchBar</code> component,\nthe <code>ItemList</code> component should update which <code>Item</code> components are being\ndisplayed.</p>\n\n<p>Here's the component hierarchy:</p>\n<div class=\"highlight\"><pre class=\"highlight plaintext\"><code>App\n├─── SearchBar\n└─── ItemList\n    ├─── Item\n    └─── Item\n</code></pre></div>\n<p>To build this feature, which component would need to hold the <code>searchText</code>\nstate?</p>",
+      "question_text": "<p>We're building a feature in a React application to allow users to search for\nparticular items. When the user enters some text in the <code>SearchBar</code> component,\nthe <code>ItemList</code> component should update which <code>Item</code> components are being\ndisplayed.</p>\n\n<p>Here's the component hierarchy:</p>\n<div class=\"highlight\"><pre class=\"highlight plaintext\"><code>App\n├─── SearchBar\n└─── ItemList\n    ├─── Item\n    └─── Item\n</code></pre></div>\n<p>To build this feature, which component would need to hold the <code>searchText</code>state?</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:React Information Flow",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/react-information-flow\">React Information Flow</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_5724",
-          "id": 5724,
-          "text": "App",
-          "comments": "Right! Since both the SearchBar and ItemList components need access to this state, this state would need to be held in their closest common parent, which is App.",
-          "comments_html": "Right! Since both the <code>SearchBar</code> and <code>ItemList</code> components need access to this\nstate, this state would need to be held in their closest common parent, which is\n<code>App</code>."
+          "id": 6430,
+          "text": "",
+          "html": "<p>App</p>",
+          "comments": "",
+          "comments_html": "<p>Right! Since both the <code>SearchBar</code> and <code>ItemList</code> components need access to this\nstate, this state would need to be held in their closest common parent, which\nis<code>App</code>.</p>",
+          "weight": 100.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_946",
-          "id": 946,
-          "text": "SearchBar",
-          "comments": "Since both the SearchBar and ItemList components need access to this state, this state would need to be held in their closest common parent, which is App.",
-          "comments_html": "Since both the <code>SearchBar</code> and <code>ItemList</code> components need access to this state,\nthis state would need to be held in their closest common parent, which is <code>App</code>."
+          "id": 3296,
+          "text": "",
+          "html": "<p>SearchBar</p>",
+          "comments": "",
+          "comments_html": "<p>Since both the <code>SearchBar</code> and <code>ItemList</code> components need access to this state,\nthis state would need to be held in their closest common parent, which is <code>App</code>.</p>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_857",
-          "id": 857,
-          "text": "ItemList",
-          "comments": "Since both the SearchBar and ItemList components need access to this state, this state would need to be held in their closest common parent, which is App.",
-          "comments_html": "Since both the <code>SearchBar</code> and <code>ItemList</code> components need access to this state,\nthis state would need to be held in their closest common parent, which is <code>App</code>."
+          "id": 3498,
+          "text": "",
+          "html": "<p>ItemList</p>",
+          "comments": "",
+          "comments_html": "<p>Since both the <code>SearchBar</code> and <code>ItemList</code> components need access to this state,\nthis state would need to be held in their closest common parent, which is <code>App</code>.</p>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_3304",
-          "id": 3304,
-          "text": "Item",
-          "comments": "Since both the SearchBar and ItemList components need access to this state, this state would need to be held in their closest common parent, which is App.",
-          "comments_html": "Since both the <code>SearchBar</code> and <code>ItemList</code> components need access to this state,\nthis state would need to be held in their closest common parent, which is <code>App</code>."
+          "id": 7706,
+          "text": "",
+          "html": "<p>Item</p>",
+          "comments": "",
+          "comments_html": "<p>Since both the <code>SearchBar</code> and <code>ItemList</code> components need access to this state,\nthis state would need to be held in their closest common parent, which is <code>App</code>.</p>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_8789",
-          "id": 8789,
-          "text": "I don't know",
-          "html": "I don't know",
-          "comments": "Since both the SearchBar and ItemList components need access to this state, this state would need to be held in their closest common parent, which is App.",
-          "comments_html": "Since both the <code>SearchBar</code> and <code>ItemList</code> components need access to this state,\nthis state would need to be held in their closest common parent, which is <code>App</code>."
+          "id": 8998,
+          "text": "",
+          "html": "<p>I don't know</p>",
+          "comments": "",
+          "comments_html": "<p>Since both the <code>SearchBar</code> and <code>ItemList</code> components need access to this state,\nthis state would need to be held in their closest common parent, which is <code>App</code>.</p>",
+          "weight": 0.0
         }
       ],
       "variables": null,
@@ -151,30 +150,32 @@
       "id": 366260,
       "quiz_id": 53472,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 2,
+      "assessment_question_id": 632125,
+      "position": null,
       "question_name": "Controlled Components",
       "question_type": "short_answer_question",
-      "question_text": "A <strong>controlled component</strong> is a component that derives its input values from\n____.",
+      "question_text": "<p>A <strong>controlled component</strong> is a component that derives its input values from\n____.</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "Be sure to study the source/s for this question. You'll get it next time.",
       "neutral_comments": "Source/s:Controlled Components",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/controlled-components\">Controlled Components</a></li></ul><p></p>",
       "answers": [
         {
+          "id": "3847",
           "text": "State",
-          "weight": 100,
           "comments": "",
-          "id": 3847
+          "comments_html": "",
+          "weight": 100
         },
         {
+          "id": "5832",
           "text": "state",
-          "weight": 100,
           "comments": "",
-          "id": 5832
+          "comments_html": "",
+          "weight": 100
         }
       ],
       "variables": null,
@@ -188,34 +189,32 @@
       "id": 366261,
       "quiz_id": 53472,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 3,
+      "assessment_question_id": 632131,
+      "position": null,
       "question_name": "State and Arrays",
       "question_type": "true_false_question",
-      "question_text": "Any time you want to make a change (adding, updating or deleting an item) to an\narray that's being stored in state, you first need to make a copy of the array\nusing the spread operator.",
+      "question_text": "<p>Any time you want to make a change (adding, updating or deleting an item) to an\narray that's being stored in state, you first need to make a copy of the array\nusing the spread operator.</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:React State and Arrays",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/react-state-and-arrays\">React State and Arrays</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_5049",
-          "id": 5049,
+          "comments": "",
+          "comments_html": "<p>Using the spread operator isn't always necessary when updating state with an\narray. The important thing is that whatever value is passed to the setter\nfunction for that state is a <strong>new object</strong> rather than a reference to an\nexisting object.</p>\n\n<p>You can use other array methods, like <code>map</code> or <code>filter</code>, to produce a new\nobject; it doesn't need to be the spread operator exclusively.</p>",
           "text": "True",
-          "comments": "Using the spread operator isn't always necessary when updating state with an array. The important thing is that whatever value is passed to the setter function for that state is a new object rather than a reference to an existing object. You can use other array methods, like map or filter, to produce a new object; it doesn't need to be the spread operator exclusively.",
-          "comments_html": "<p>Using the spread operator isn't always necessary when updating state with an\narray. The important thing is that whatever value is passed to the setter\nfunction for that state is a <strong>new object</strong> rather than a reference to an\nexisting object.</p>\n\n<p>You can use other array methods, like <code>map</code> or <code>filter</code>, to produce a new\nobject; it doesn't need to be the spread operator exclusively.</p>"
+          "weight": 0,
+          "id": 5049
         },
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_9010",
-          "id": 9010,
+          "comments": "",
+          "comments_html": "<p>Correct! Using the spread operator isn't always necessary when updating state\nwith an array. The important thing is that whatever value is passed to the\nsetter function for that state is a <strong>new object</strong> rather than a reference to an\nexisting object.</p>\n\n<p>You can use other array methods, like <code>map</code> or <code>filter</code>, to produce a new\nobject; it doesn't need to be the spread operator exclusively.</p>",
           "text": "False",
-          "comments": "Correct! Using the spread operator isn't always necessary when updating state with an array. The important thing is that whatever value is passed to the setter function for that state is a new object rather than a reference to an existing object. You can use other array methods, like map or filter, to produce a new object; it doesn't need to be the spread operator exclusively.",
-          "comments_html": "<p>Correct! Using the spread operator isn't always necessary when updating state\nwith an array. The important thing is that whatever value is passed to the\nsetter function for that state is a <strong>new object</strong> rather than a reference to an\nexisting object.</p>\n\n<p>You can use other array methods, like <code>map</code> or <code>filter</code>, to produce a new\nobject; it doesn't need to be the spread operator exclusively.</p>"
+          "weight": 100,
+          "id": 9010
         }
       ],
       "variables": null,
@@ -229,8 +228,8 @@
       "id": 366262,
       "quiz_id": 53472,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 4,
+      "assessment_question_id": 632126,
+      "position": null,
       "question_name": "Component Data",
       "question_type": "fill_in_multiple_blanks_question",
       "question_text": "<p>Fill in the blanks:</p>\n\n<p>[blank1] is data passed down to a child component from a parent component.</p>\n\n<p>[blank2] is data held internally by React that can be accessed in a component,\nand can change over time.</p>",
@@ -238,32 +237,40 @@
       "correct_comments": "",
       "incorrect_comments": "Be sure to study the source/s for this question. You'll get it next time.",
       "neutral_comments": "Source/s:React StateProps Basics",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/react-state\">React State</a></li><li><a href=\"/courses/7553/pages/props-basics\">Props Basics</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 100,
-          "id": 2575,
+          "id": "2575",
           "text": "props",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0,
           "blank_id": "blank1"
         },
         {
-          "weight": 100,
-          "id": 9656,
+          "id": "9656",
           "text": "Props",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0,
           "blank_id": "blank1"
         },
         {
-          "weight": 100,
-          "id": 567,
+          "id": "567",
           "text": "state",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0,
           "blank_id": "blank2"
         },
         {
-          "weight": 100,
-          "id": 8637,
+          "id": "8637",
           "text": "State",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0,
           "blank_id": "blank2"
         }
       ],
@@ -278,34 +285,32 @@
       "id": 366263,
       "quiz_id": 53472,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 5,
+      "assessment_question_id": 632124,
+      "position": null,
       "question_name": "Events",
       "question_type": "true_false_question",
-      "question_text": "Event listeners cannot be attached directly to our custom React components.",
+      "question_text": "<p>Event listeners cannot be attached directly to our custom React components.</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:Event Handling in React",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/event-handling-in-react\">Event Handling in React</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_8421",
-          "id": 8421,
+          "comments": "",
+          "comments_html": "<p>Right! We can't attach event listeners directly to components, like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">App</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">MyButton</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n</code></pre></div>\n<p>Event listeners can only be attached to DOM elements in JSX, like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">App</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Click Me!button&gt;;\n}\n</code></pre></div>",
           "text": "True",
-          "comments": "Right! We can't attach event listeners directly to components, like this: function App() { return MyButton onClick={handleClick} /; }  Event listeners can only be attached to DOM elements in JSX, like this: function App() { return button onClick={handleClick}Click Me!button; }",
-          "comments_html": "<p>Right! We can't attach event listeners directly to components, like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">App</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">MyButton</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n</code></pre></div>\n<p>Event listeners can only be attached to DOM elements in JSX, like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">App</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Click Me!button&gt;;\n}\n</code></pre></div>"
+          "weight": 100,
+          "id": 8421
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_7703",
-          "id": 7703,
+          "comments": "",
+          "comments_html": "<p>We can't attach event listeners directly to components, like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">App</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">MyButton</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n</code></pre></div>\n<p>Event listeners can only be attached to DOM elements in JSX, like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">App</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Click Me!button&gt;;\n}\n</code></pre></div>",
           "text": "False",
-          "comments": "We can't attach event listeners directly to components, like this: function App() { return MyButton onClick={handleClick} /; }  Event listeners can only be attached to DOM elements in JSX, like this: function App() { return button onClick={handleClick}Click Me!button; }",
-          "comments_html": "<p>We can't attach event listeners directly to components, like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">App</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">MyButton</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n</code></pre></div>\n<p>Event listeners can only be attached to DOM elements in JSX, like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">App</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Click Me!button&gt;;\n}\n</code></pre></div>"
+          "weight": 0,
+          "id": 7703
         }
       ],
       "variables": null,
@@ -319,39 +324,45 @@
       "id": 366264,
       "quiz_id": 53472,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 6,
+      "assessment_question_id": 632135,
+      "position": null,
       "question_name": "State and Arrays",
       "question_type": "matching_question",
-      "question_text": "For each desired change to an array that's being stored in state, select the\nmost appropriate method/operator to use:",
+      "question_text": "<p>For each desired change to an array that's being stored in state, select the\nmost appropriate method/operator to use:</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "Be sure to study the source/s for this question. You'll get it next time.",
       "neutral_comments": "Source/s:React State and Arrays",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/react-state-and-arrays\">React State and Arrays</a></li></ul><p></p>",
       "answers": [
         {
+          "id": "3929",
           "text": "Adding an item to an array",
-          "id": 3929,
-          "match_id": 968,
           "left": "Adding an item to an array",
-          "right": "spread operator"
+          "right": "spread operator",
+          "comments": "",
+          "comments_html": "",
+          "match_id": 2296
         },
         {
+          "id": "2196",
           "text": "Removing an item from an array",
-          "id": 2196,
-          "match_id": 3217,
           "left": "Removing an item from an array",
-          "right": "filter"
+          "right": "filter",
+          "comments": "",
+          "comments_html": "",
+          "match_id": 9903
         },
         {
+          "id": "6370",
           "text": "Updating an item in an array",
-          "id": 6370,
-          "match_id": 7112,
           "left": "Updating an item in an array",
-          "right": "map"
+          "right": "map",
+          "comments": "",
+          "comments_html": "",
+          "match_id": 4439
         }
       ],
       "variables": null,
@@ -360,70 +371,68 @@
       "formula_decimal_places": null,
       "matches": [
         {
-          "match_id": 968,
-          "text": "spread operator"
+          "text": "spread operator",
+          "match_id": 2296
         },
         {
-          "match_id": 3217,
-          "text": "filter"
+          "text": "filter",
+          "match_id": 9903
         },
         {
-          "match_id": 7112,
-          "text": "map"
+          "text": "map",
+          "match_id": 4439
         }
       ],
-      "matching_answer_incorrect_matches": null
+      "matching_answer_incorrect_matches": ""
     },
     {
       "id": 366265,
       "quiz_id": 53472,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 7,
+      "assessment_question_id": 632129,
+      "position": null,
       "question_name": "Information Flow",
       "question_type": "multiple_choice_question",
-      "question_text": "<p>Given the following components:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Parent</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">setIsOn</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"kc\">true</span><span class=\"p\">);</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">Child</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n\n<span class=\"kd\">function</span> <span class=\"nx\">Child</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span><span class=\"p\">&gt;</span>Toggle<span class=\"p\">&lt;/</span><span class=\"nt\">button</span><span class=\"p\">&gt;;</span>\n<span class=\"p\">}</span>\n</code></pre></div>\n<p>In order to update the <code>isOn</code> state in the <code>&lt;Parent /&gt;</code> component when the\nbutton is clicked in the <code>&lt;Child /&gt;</code> component, you would need to:</p>",
+      "question_text": "<p>Given the following components:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Parent</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">setIsOn</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"kc\">true</span><span class=\"p\">);</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">Child</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n\n<span class=\"kd\">function</span> <span class=\"nx\">Child</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span><span class=\"p\">&gt;</span>Togglebutton&gt;;\n}\n</code></pre></div>\n<p>In order to update the <code>isOn</code> state in the <code>component when the button is\nclicked in the</code> component, you would need to:</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:React Information Flow",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/react-information-flow\">React Information Flow</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_2581",
-          "id": 2581,
-          "text": "Pass a callback function as a prop from the Parent / to the Child /, and call it from the Child / component.",
-          "html": "Pass a callback function as a prop from the <code>&lt;Parent /&gt;</code> to the <code>&lt;Child /&gt;</code>, and\ncall it from the <code>&lt;Child /&gt;</code> component.",
-          "comments": "Right! We would need to do something like this: function Parent() { const [isOn, setIsOn] = useState(true); return Child isOn={isOn} onToggleClick={setIsOn} /; } function Child({ isOn, onToggleClick }) { return button onClick={() = onToggleClick(!isOn)}Toggle/button; }",
-          "comments_html": "<p>Right! We would need to do something like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Parent</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">setIsOn</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"kc\">true</span><span class=\"p\">);</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">Child</span> <span class=\"na\">isOn</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">isOn</span><span class=\"si\">}</span> <span class=\"na\">onToggleClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">setIsOn</span><span class=\"si\">}</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n\n<span class=\"kd\">function</span> <span class=\"nx\">Child</span><span class=\"p\">({</span> <span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">onToggleClick</span> <span class=\"p\">})</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">()</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">onToggleClick</span><span class=\"p\">(</span><span class=\"o\">!</span><span class=\"nx\">isOn</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Toggle<span class=\"p\">&lt;/</span><span class=\"nt\">button</span><span class=\"p\">&gt;;</span>\n<span class=\"p\">}</span>\n</code></pre></div>"
+          "id": 4386,
+          "text": "",
+          "html": "<p>Pass a callback function as a prop from the <code>to the</code>, and call it from the\n`` component.</p>",
+          "comments": "",
+          "comments_html": "<p>Right! We would need to do something like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Parent</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">setIsOn</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"kc\">true</span><span class=\"p\">);</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">Child</span> <span class=\"na\">isOn</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">isOn</span><span class=\"si\">}</span> <span class=\"na\">onToggleClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">setIsOn</span><span class=\"si\">}</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n\n<span class=\"kd\">function</span> <span class=\"nx\">Child</span><span class=\"p\">({</span> <span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">onToggleClick</span> <span class=\"p\">})</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">()</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">onToggleClick</span><span class=\"p\">(</span><span class=\"o\">!</span><span class=\"nx\">isOn</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Togglebutton&gt;;\n}\n</code></pre></div>",
+          "weight": 100.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_2695",
-          "id": 2695,
-          "text": "Export the setState() function from the Parent /, and import it so that you can call it from the Child / component.",
-          "html": "Export the <code>setState()</code> function from the <code>&lt;Parent /&gt;</code>, and import it so that\nyou can call it from the <code>&lt;Child /&gt;</code> component.",
-          "comments": "We can't explicitly export our setState() function, but we can use a callback function to use our state as props in another component! We would need to do something like this: function Parent() { const [isOn, setIsOn] = useState(true); return Child isOn={isOn} onToggleClick={setIsOn} /; } function Child({ isOn, onToggleClick }) { return button onClick={() = onToggleClick(!isOn)}Toggle/button; }",
-          "comments_html": "<p>We can't explicitly export our <code>setState()</code> function, but we can use a\ncallback function to use our state as props in another component! We would\nneed to do something like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Parent</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">setIsOn</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"kc\">true</span><span class=\"p\">);</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">Child</span> <span class=\"na\">isOn</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">isOn</span><span class=\"si\">}</span> <span class=\"na\">onToggleClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">setIsOn</span><span class=\"si\">}</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n\n<span class=\"kd\">function</span> <span class=\"nx\">Child</span><span class=\"p\">({</span> <span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">onToggleClick</span> <span class=\"p\">})</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">()</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">onToggleClick</span><span class=\"p\">(</span><span class=\"o\">!</span><span class=\"nx\">isOn</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Toggle<span class=\"p\">&lt;/</span><span class=\"nt\">button</span><span class=\"p\">&gt;;</span>\n<span class=\"p\">}</span>\n</code></pre></div>"
+          "id": 9071,
+          "text": "",
+          "html": "<p>Export the <code>setState()</code> function from the <code>, and import it so that you can call\nit from the</code> component.</p>",
+          "comments": "",
+          "comments_html": "<p>We can't explicitly export our <code>setState()</code> function, but we can use a callback\nfunction to use our state as props in another component! We would need to do\nsomething like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Parent</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">setIsOn</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"kc\">true</span><span class=\"p\">);</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">Child</span> <span class=\"na\">isOn</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">isOn</span><span class=\"si\">}</span> <span class=\"na\">onToggleClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">setIsOn</span><span class=\"si\">}</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n\n<span class=\"kd\">function</span> <span class=\"nx\">Child</span><span class=\"p\">({</span> <span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">onToggleClick</span> <span class=\"p\">})</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">()</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">onToggleClick</span><span class=\"p\">(</span><span class=\"o\">!</span><span class=\"nx\">isOn</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Togglebutton&gt;;\n}\n</code></pre></div>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_9920",
-          "id": 9920,
-          "text": "Data only flows downward in React so it is not possible to change the Parent / component's state from the Child / component.",
-          "html": "Data only flows downward in React so it is not possible to change the\n<code>&lt;Parent /&gt;</code> component's state from the <code>&lt;Child /&gt;</code> component.",
-          "comments": "Using inverse data flow, we are able to use props/state to update a parent component's state from its children! We could do something like this: function Parent() { const [isOn, setIsOn] = useState(true); return Child isOn={isOn} onToggleClick={setIsOn} /; } function Child({ isOn, onToggleClick }) { return button onClick={() = onToggleClick(!isOn)}Toggle/button; }",
-          "comments_html": "<p>Using inverse data flow, we are able to use props/state to update a parent\ncomponent's state from its children! We could do something like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Parent</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">setIsOn</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"kc\">true</span><span class=\"p\">);</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">Child</span> <span class=\"na\">isOn</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">isOn</span><span class=\"si\">}</span> <span class=\"na\">onToggleClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">setIsOn</span><span class=\"si\">}</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n\n<span class=\"kd\">function</span> <span class=\"nx\">Child</span><span class=\"p\">({</span> <span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">onToggleClick</span> <span class=\"p\">})</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">()</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">onToggleClick</span><span class=\"p\">(</span><span class=\"o\">!</span><span class=\"nx\">isOn</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Toggle<span class=\"p\">&lt;/</span><span class=\"nt\">button</span><span class=\"p\">&gt;;</span>\n<span class=\"p\">}</span>\n</code></pre></div>"
+          "id": 1537,
+          "text": "",
+          "html": "<p>Data only flows downward in React so it is not possible to change the<code>\ncomponent's state from the</code> component.</p>",
+          "comments": "",
+          "comments_html": "<p>Using inverse data flow, we are able to use props/state to update a parent\ncomponent's state from its children! We could do something like this:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Parent</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">setIsOn</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"kc\">true</span><span class=\"p\">);</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nc\">Child</span> <span class=\"na\">isOn</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">isOn</span><span class=\"si\">}</span> <span class=\"na\">onToggleClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">setIsOn</span><span class=\"si\">}</span> <span class=\"p\">/&gt;;</span>\n<span class=\"p\">}</span>\n\n<span class=\"kd\">function</span> <span class=\"nx\">Child</span><span class=\"p\">({</span> <span class=\"nx\">isOn</span><span class=\"p\">,</span> <span class=\"nx\">onToggleClick</span> <span class=\"p\">})</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">()</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">onToggleClick</span><span class=\"p\">(</span><span class=\"o\">!</span><span class=\"nx\">isOn</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Togglebutton&gt;;\n}\n</code></pre></div>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_5187",
-          "id": 5187,
-          "text": "I don't know.",
-          "html": "I don't know."
+          "id": 9604,
+          "text": "",
+          "html": "<p>I don't know.</p>",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
         }
       ],
       "variables": null,
@@ -437,34 +446,32 @@
       "id": 366266,
       "quiz_id": 53472,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 8,
+      "assessment_question_id": 632130,
+      "position": null,
       "question_name": "State and Arrays",
       "question_type": "true_false_question",
-      "question_text": "<p>Given the following component:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">App</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">numbers</span><span class=\"p\">,</span> <span class=\"nx\">setNumbers</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">([]);</span>\n\n  <span class=\"kd\">function</span> <span class=\"nx\">addNumber</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n    <span class=\"nx\">numbers</span><span class=\"p\">.</span><span class=\"nx\">push</span><span class=\"p\">(</span><span class=\"mi\">1</span><span class=\"p\">);</span>\n    <span class=\"nx\">setNumbers</span><span class=\"p\">(</span><span class=\"nx\">numbers</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">addNumber</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Add<span class=\"p\">&lt;/</span><span class=\"nt\">button</span><span class=\"p\">&gt;;</span>\n<span class=\"p\">}</span>\n</code></pre></div>\n<p>Clicking the button would cause the component to re-render.</p>",
+      "question_text": "<p>Given the following component:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">App</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">numbers</span><span class=\"p\">,</span> <span class=\"nx\">setNumbers</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">([]);</span>\n\n  <span class=\"kd\">function</span> <span class=\"nx\">addNumber</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n    <span class=\"nx\">numbers</span><span class=\"p\">.</span><span class=\"nx\">push</span><span class=\"p\">(</span><span class=\"mi\">1</span><span class=\"p\">);</span>\n    <span class=\"nx\">setNumbers</span><span class=\"p\">(</span><span class=\"nx\">numbers</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">addNumber</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Addbutton&gt;;\n}\n</code></pre></div>\n<p>Clicking the button would cause the component to re-render.</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:React State and Arrays",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/react-state-and-arrays\">React State and Arrays</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_9149",
-          "id": 9149,
+          "comments": "",
+          "comments_html": "<p>Since we're passing a reference to the same <code>numbers</code> variable to<code>setNumbers</code>,\nReact will not re-render our component. We would need to make a copy of the\n<code>numbers</code> array before calling <code>setNumbers</code>, like this:</p>\n<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"kd\">function</span> <span class=\"nx\">addNumber</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"nx\">newNumbers</span> <span class=\"o\">=</span> <span class=\"p\">[...</span><span class=\"nx\">numbers</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">];</span>\n  <span class=\"nx\">setNumbers</span><span class=\"p\">(</span><span class=\"nx\">newNumbers</span><span class=\"p\">);</span>\n<span class=\"p\">}</span>\n</code></pre></div>",
           "text": "True",
-          "comments": "Since we're passing a reference to the same numbers variable to setNumbers, React will not re-render our component. We would need to make a copy of the numbers array before calling setNumbers, like this: function addNumber() { const newNumbers = [...numbers, 1]; setNumbers(newNumbers); }",
-          "comments_html": "<p>Since we're passing a reference to the same <code>numbers</code> variable to\n<code>setNumbers</code>, React will not re-render our component. We would need to make a\ncopy of the <code>numbers</code> array before calling <code>setNumbers</code>, like this:</p>\n<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"kd\">function</span> <span class=\"nx\">addNumber</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"nx\">newNumbers</span> <span class=\"o\">=</span> <span class=\"p\">[...</span><span class=\"nx\">numbers</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">];</span>\n  <span class=\"nx\">setNumbers</span><span class=\"p\">(</span><span class=\"nx\">newNumbers</span><span class=\"p\">);</span>\n<span class=\"p\">}</span>\n</code></pre></div>"
+          "weight": 0,
+          "id": 9149
         },
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_9273",
-          "id": 9273,
+          "comments": "",
+          "comments_html": "<p>Correct!</p>\n\n<p>Since we're passing a reference to the same <code>numbers</code> variable to<code>setNumbers</code>,\nReact will not re-render our component. We would need to make a copy of the\n<code>numbers</code> array before calling <code>setNumbers</code>, like this:</p>\n<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"kd\">function</span> <span class=\"nx\">addNumber</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"nx\">newNumbers</span> <span class=\"o\">=</span> <span class=\"p\">[...</span><span class=\"nx\">numbers</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">];</span>\n  <span class=\"nx\">setNumbers</span><span class=\"p\">(</span><span class=\"nx\">newNumbers</span><span class=\"p\">);</span>\n<span class=\"p\">}</span>\n</code></pre></div>",
           "text": "False",
-          "comments": "Correct! Since we're passing a reference to the same numbers variable to setNumbers, React will not re-render our component. We would need to make a copy of the numbers array before calling setNumbers, like this: function addNumber() { const newNumbers = [...numbers, 1]; setNumbers(newNumbers); }",
-          "comments_html": "<p>Correct!</p>\n\n<p>Since we're passing a reference to the same <code>numbers</code> variable to\n<code>setNumbers</code>, React will not re-render our component. We would need to make a \ncopy of the <code>numbers</code> array before calling <code>setNumbers</code>, like this:</p>\n<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"kd\">function</span> <span class=\"nx\">addNumber</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"nx\">newNumbers</span> <span class=\"o\">=</span> <span class=\"p\">[...</span><span class=\"nx\">numbers</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">];</span>\n  <span class=\"nx\">setNumbers</span><span class=\"p\">(</span><span class=\"nx\">newNumbers</span><span class=\"p\">);</span>\n<span class=\"p\">}</span>\n</code></pre></div>"
+          "weight": 100,
+          "id": 9273
         }
       ],
       "variables": null,
@@ -478,51 +485,50 @@
       "id": 366267,
       "quiz_id": 53472,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 9,
+      "assessment_question_id": 632123,
+      "position": null,
       "question_name": "Controlled Components",
       "question_type": "multiple_answers_question",
-      "question_text": "Select all that apply. Setting up a controlled form <strong>requires</strong> :",
+      "question_text": "<p>Select all that apply. Setting up a controlled form <strong>requires</strong> :</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:Controlled Components",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/controlled-components\">Controlled Components</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_1393",
-          "id": 1393,
-          "text": "Setting up an event listener to update state as the user enters data in an input field.",
-          "html": "Setting up an event listener to update state as the user enters data in an input\nfield.",
-          "comments": "Right! To ensure that our component state always matches the data in the form , we need to update state any time the input changes: input type=\"text\" onChange={(e) = setName(e.target.value)} value={name} /",
-          "comments_html": "<p>Right! To ensure that our <strong>component state</strong> always matches the data in\nthe <strong>form</strong> , we need to update state any time the input changes:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"p\">&lt;</span><span class=\"nt\">input</span> <span class=\"na\">type</span><span class=\"p\">=</span><span class=\"s\">\"text\"</span> <span class=\"na\">onChange</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">(</span><span class=\"nx\">e</span><span class=\"p\">)</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">setName</span><span class=\"p\">(</span><span class=\"nx\">e</span><span class=\"p\">.</span><span class=\"nx\">target</span><span class=\"p\">.</span><span class=\"nx\">value</span><span class=\"p\">)</span><span class=\"si\">}</span> <span class=\"na\">value</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">name</span><span class=\"si\">}</span> <span class=\"p\">/&gt;</span>\n</code></pre></div>"
+          "id": 1335,
+          "text": "",
+          "comments": "",
+          "comments_html": "<p>Right! To ensure that our <strong>component state</strong> always matches the data in the\n<strong>form</strong> , we need to update state any time the input changes:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"p\">&lt;</span><span class=\"nt\">input</span> <span class=\"na\">type</span><span class=\"p\">=</span><span class=\"s\">\"text\"</span> <span class=\"na\">onChange</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">(</span><span class=\"nx\">e</span><span class=\"p\">)</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">setName</span><span class=\"p\">(</span><span class=\"nx\">e</span><span class=\"p\">.</span><span class=\"nx\">target</span><span class=\"p\">.</span><span class=\"nx\">value</span><span class=\"p\">)</span><span class=\"si\">}</span> <span class=\"na\">value</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">name</span><span class=\"si\">}</span> <span class=\"p\">/&gt;</span>\n</code></pre></div>",
+          "weight": 100.0,
+          "html": "<p>Setting up an event listener to update state as the user enters data in an input\nfield.</p>"
         },
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_1730",
-          "id": 1730,
-          "text": "Updating the information in an input field to reflect state.",
-          "comments": "Correct! To ensure our form always matches our component state , we need to synchronize the value of each input field with state: input type=\"text\" onChange={(e) = setName(e.target.value)} value={name} /",
-          "comments_html": "<p>Correct! To ensure our <strong>form</strong> always matches our <strong>component state</strong> , we need\nto synchronize the <strong>value</strong> of each input field with state:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"p\">&lt;</span><span class=\"nt\">input</span> <span class=\"na\">type</span><span class=\"p\">=</span><span class=\"s\">\"text\"</span> <span class=\"na\">onChange</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">(</span><span class=\"nx\">e</span><span class=\"p\">)</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">setName</span><span class=\"p\">(</span><span class=\"nx\">e</span><span class=\"p\">.</span><span class=\"nx\">target</span><span class=\"p\">.</span><span class=\"nx\">value</span><span class=\"p\">)</span><span class=\"si\">}</span> <span class=\"na\">value</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">name</span><span class=\"si\">}</span> <span class=\"p\">/&gt;</span>\n</code></pre></div>"
+          "id": 6773,
+          "text": "",
+          "comments": "",
+          "comments_html": "<p>Correct! To ensure our <strong>form</strong> always matches our <strong>component state</strong> , we need\nto synchronize the <strong>value</strong> of each input field with state:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"p\">&lt;</span><span class=\"nt\">input</span> <span class=\"na\">type</span><span class=\"p\">=</span><span class=\"s\">\"text\"</span> <span class=\"na\">onChange</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">(</span><span class=\"nx\">e</span><span class=\"p\">)</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">setName</span><span class=\"p\">(</span><span class=\"nx\">e</span><span class=\"p\">.</span><span class=\"nx\">target</span><span class=\"p\">.</span><span class=\"nx\">value</span><span class=\"p\">)</span><span class=\"si\">}</span> <span class=\"na\">value</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">name</span><span class=\"si\">}</span> <span class=\"p\">/&gt;</span>\n</code></pre></div>",
+          "weight": 100.0,
+          "html": "<p>Updating the information in an input field to reflect state.</p>"
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_2784",
-          "id": 2784,
-          "text": "Moving state out of the form component and into a parent component.",
-          "comments": "While holding state in a parent component is necessary in some scenarios, such as when multiple components depend on the same state from the form input fields, it is not required.",
-          "comments_html": "While holding state in a parent component is necessary in some scenarios, such\nas when multiple components depend on the same state from the form input fields,\nit is not required."
+          "id": 1088,
+          "text": "",
+          "comments": "",
+          "comments_html": "<p>While holding state in a parent component is necessary in some scenarios, such\nas when multiple components depend on the same state from the form input fields,\nit is not required.</p>",
+          "weight": 0.0,
+          "html": "<p>Moving state out of the form component and into a parent component.</p>"
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_6822",
-          "id": 6822,
-          "text": "Validating the information the user enters.",
-          "comments": "Validating user information is helpful, but it is not required when setting up a controlled form.",
-          "comments_html": "Validating user information is helpful, but it is not required when setting up a\ncontrolled form."
+          "id": 9517,
+          "text": "",
+          "comments": "",
+          "comments_html": "<p>Validating user information is helpful, but it is not required when setting up a\ncontrolled form.</p>",
+          "weight": 0.0,
+          "html": "<p>Validating the information the user enters.</p>"
         }
       ],
       "variables": null,
@@ -536,8 +542,8 @@
       "id": 366268,
       "quiz_id": 53472,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 10,
+      "assessment_question_id": 632133,
+      "position": null,
       "question_name": "React Information Flow",
       "question_type": "true_false_question",
       "question_text": "<p>Given the following component hierarchy:</p>\n<div class=\"highlight\"><pre class=\"highlight plaintext\"><code>App\n├─── SearchBar\n└─── ItemList\n    ├─── Item\n    └─── Item\n</code></pre></div>\n<p>It's possible for the <code>ItemList</code> component to access state that is contained in\nthe <code>SearchBar</code> component.</p>",
@@ -545,25 +551,23 @@
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:React Information Flow",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/react-information-flow\">React Information Flow</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_9208",
-          "id": 9208,
+          "comments": "",
+          "comments_html": "<p>Sibling components have no way of accessing each others' state directly. The\nstate would need to be stored in the <code>App</code> component in order for\nthe<code>ItemList</code>and the <code>SearchBar</code> component both to be able to access that state.</p>",
           "text": "True",
-          "comments": "Sibling components have no way of accessing each others' state directly. The state would need to be stored in the App component in order for theItemList and the SearchBar component both to be able to access that state.",
-          "comments_html": "Sibling components have no way of accessing each others' state directly. The\nstate would need to be stored in the <code>App</code> component in order for the<code>ItemList</code>\nand the <code>SearchBar</code> component both to be able to access that state."
+          "weight": 0,
+          "id": 9208
         },
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_7206",
-          "id": 7206,
+          "comments": "",
+          "comments_html": "<p>Right! Sibling components have no way of accessing each others' state directly.\nThe state would need to be stored in the <code>App</code> component in order for\nthe<code>ItemList</code> and the <code>SearchBar</code> component both to be able to access that\nstate.</p>",
           "text": "False",
-          "comments": "Right! Sibling components have no way of accessing each others' state directly. The state would need to be stored in the App component in order for the ItemList and the SearchBar component both to be able to access that state.",
-          "comments_html": "Right! Sibling components have no way of accessing each others' state directly.\nThe state would need to be stored in the <code>App</code> component in order for the\n<code>ItemList</code> and the <code>SearchBar</code> component both to be able to access that state."
+          "weight": 100,
+          "id": 7206
         }
       ],
       "variables": null,
@@ -577,34 +581,32 @@
       "id": 366269,
       "quiz_id": 53472,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 11,
+      "assessment_question_id": 632122,
+      "position": null,
       "question_name": "State",
       "question_type": "true_false_question",
-      "question_text": "React will <strong>always</strong> re-render a component when the <code>setState</code> function is\ncalled.",
+      "question_text": "<p>React will <strong>always</strong> re-render a component when the <code>setState</code> function is\ncalled.</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:React StateReact State and Arrays",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/react-state\">React State</a></li><li><a href=\"/courses/7553/pages/react-state-and-arrays\">React State and Arrays</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_4729",
-          "id": 4729,
+          "comments": "",
+          "comments_html": "<p>React will only re-render a component when <code>setState</code> is called with a new\nobject. For example, this code would not cause a re-render:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Counter</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">nums</span><span class=\"p\">,</span> <span class=\"nx\">setNums</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">([]);</span>\n\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n    <span class=\"nx\">nums</span><span class=\"p\">.</span><span class=\"nx\">push</span><span class=\"p\">(</span><span class=\"mi\">1</span><span class=\"p\">);</span>\n    <span class=\"nx\">setNums</span><span class=\"p\">(</span><span class=\"nx\">nums</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Addbutton&gt;;\n}\n</code></pre></div>\n<p>Since we are passing a reference to same <code>nums</code> object in memory, React will not\nre-render our component. We'd need to pass a new object to <code>setNums</code>instead:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Counter</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">nums</span><span class=\"p\">,</span> <span class=\"nx\">setNums</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">([]);</span>\n\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n    <span class=\"kd\">const</span> <span class=\"nx\">newNums</span> <span class=\"o\">=</span> <span class=\"p\">[...</span><span class=\"nx\">nums</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">];</span>\n    <span class=\"nx\">setNums</span><span class=\"p\">(</span><span class=\"nx\">newNums</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Addbutton&gt;;\n}\n</code></pre></div>",
           "text": "True",
-          "comments": "React will only re-render a component when setState is called with a new object. For example, this code would not cause a re-render: function Counter() { const [nums, setNums] = useState([]); function handleClick() { nums.push(1); setNums(nums); } return button onClick={handleClick}Addbutton; }  Since we are passing a reference to same nums object in memory, React will not re-render our component. We'd need to pass a new object to setNumsinstead: function Counter() { const [nums, setNums] = useState([]); function handleClick() { const newNums = [...nums, 1]; setNums(newNums); } return button onClick={handleClick}Addbutton; }",
-          "comments_html": "<p>React will only re-render a component when <code>setState</code> is called with a new\nobject. For example, this code would not cause a re-render:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Counter</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">nums</span><span class=\"p\">,</span> <span class=\"nx\">setNums</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">([]);</span>\n\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n    <span class=\"nx\">nums</span><span class=\"p\">.</span><span class=\"nx\">push</span><span class=\"p\">(</span><span class=\"mi\">1</span><span class=\"p\">);</span>\n    <span class=\"nx\">setNums</span><span class=\"p\">(</span><span class=\"nx\">nums</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Addbutton&gt;;\n}\n</code></pre></div>\n<p>Since we are passing a reference to same <code>nums</code> object in memory, React will not\nre-render our component. We'd need to pass a new object to <code>setNums</code>instead:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Counter</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">nums</span><span class=\"p\">,</span> <span class=\"nx\">setNums</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">([]);</span>\n\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n    <span class=\"kd\">const</span> <span class=\"nx\">newNums</span> <span class=\"o\">=</span> <span class=\"p\">[...</span><span class=\"nx\">nums</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">];</span>\n    <span class=\"nx\">setNums</span><span class=\"p\">(</span><span class=\"nx\">newNums</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Addbutton&gt;;\n}\n</code></pre></div>"
+          "weight": 0,
+          "id": 4729
         },
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_6797",
-          "id": 6797,
+          "comments": "",
+          "comments_html": "<p>Correct! React will only re-render a component when <code>setState</code> is called with a\nnew object. For example, this code would not cause a re-render:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Counter</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">nums</span><span class=\"p\">,</span> <span class=\"nx\">setNums</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">([]);</span>\n\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n    <span class=\"nx\">nums</span><span class=\"p\">.</span><span class=\"nx\">push</span><span class=\"p\">(</span><span class=\"mi\">1</span><span class=\"p\">);</span>\n    <span class=\"nx\">setNums</span><span class=\"p\">(</span><span class=\"nx\">nums</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Addbutton&gt;;\n}\n</code></pre></div>\n<p>Since we are passing a reference to same <code>nums</code> object in memory, React will not\nre-render our component. We'd need to pass a new object to <code>setNums</code>instead:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Counter</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">nums</span><span class=\"p\">,</span> <span class=\"nx\">setNums</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">([]);</span>\n\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n    <span class=\"kd\">const</span> <span class=\"nx\">newNums</span> <span class=\"o\">=</span> <span class=\"p\">[...</span><span class=\"nx\">nums</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">];</span>\n    <span class=\"nx\">setNums</span><span class=\"p\">(</span><span class=\"nx\">newNums</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Addbutton&gt;;\n}\n</code></pre></div>",
           "text": "False",
-          "comments": "Correct! React will only re-render a component when setState is called with a new object. For example, this code would not cause a re-render: function Counter() { const [nums, setNums] = useState([]); function handleClick() { nums.push(1); setNums(nums); } return button onClick={handleClick}Addbutton; }  Since we are passing a reference to same nums object in memory, React will not re-render our component. We'd need to pass a new object to setNumsinstead: function Counter() { const [nums, setNums] = useState([]); function handleClick() { const newNums = [...nums, 1]; setNums(newNums); } return button onClick={handleClick}Addbutton; }",
-          "comments_html": "<p>Correct! React will only re-render a component when <code>setState</code> is called with a\nnew object. For example, this code would not cause a re-render:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Counter</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">nums</span><span class=\"p\">,</span> <span class=\"nx\">setNums</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">([]);</span>\n\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n    <span class=\"nx\">nums</span><span class=\"p\">.</span><span class=\"nx\">push</span><span class=\"p\">(</span><span class=\"mi\">1</span><span class=\"p\">);</span>\n    <span class=\"nx\">setNums</span><span class=\"p\">(</span><span class=\"nx\">nums</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Addbutton&gt;;\n}\n</code></pre></div>\n<p>Since we are passing a reference to same <code>nums</code> object in memory, React will not\nre-render our component. We'd need to pass a new object to <code>setNums</code>instead:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">Counter</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">nums</span><span class=\"p\">,</span> <span class=\"nx\">setNums</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">([]);</span>\n\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n    <span class=\"kd\">const</span> <span class=\"nx\">newNums</span> <span class=\"o\">=</span> <span class=\"p\">[...</span><span class=\"nx\">nums</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">];</span>\n    <span class=\"nx\">setNums</span><span class=\"p\">(</span><span class=\"nx\">newNums</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Addbutton&gt;;\n}\n</code></pre></div>"
+          "weight": 100,
+          "id": 6797
         }
       ],
       "variables": null,
@@ -618,42 +620,42 @@
       "id": 366270,
       "quiz_id": 53472,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 12,
+      "assessment_question_id": 632132,
+      "position": null,
       "question_name": "State",
       "question_type": "multiple_choice_question",
-      "question_text": "When <code>useState()</code> is called, it returns:",
+      "question_text": "<p>When <code>useState()</code> is called, it returns:</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:React State",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/react-state\">React State</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_2346",
           "id": 2346,
-          "text": "An array containing: the current value for state a function to update that value",
+          "text": "",
           "html": "<p>An array containing:</p>\n\n<ul>\n<li>the current value for state</li>\n<li>a function to update that value</li>\n</ul>",
-          "comments": "Right! Calling useState always returns an array, which we typically assign to two variables using array destructuring syntax: const [count, setCount] = useState(1);",
-          "comments_html": "<p>Right! Calling <code>useState</code> always returns an array, which we typically assign to\ntwo variables using array destructuring syntax:</p>\n<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">count</span><span class=\"p\">,</span> <span class=\"nx\">setCount</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"mi\">1</span><span class=\"p\">);</span>\n</code></pre></div>"
+          "comments": "",
+          "comments_html": "<p>Right! Calling <code>useState</code> always returns an array, which we typically assign to\ntwo variables using array destructuring syntax:</p>\n<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">count</span><span class=\"p\">,</span> <span class=\"nx\">setCount</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"mi\">1</span><span class=\"p\">);</span>\n</code></pre></div>",
+          "weight": 100.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_9869",
-          "id": 9869,
-          "text": "A single value representing the current state",
-          "comments": "Not quite. One thing returned by useState is the value representing the current state. However, calling useState always returns an array, which we typically assign to two variables using array destructuring syntax: const [count, setCount] = useState(1);",
-          "comments_html": "<p>Not quite. One thing returned by <code>useState</code> is the value representing the\ncurrent state. However, calling <code>useState</code> always returns an array, which we\ntypically assign to two variables using array destructuring syntax:</p>\n<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">count</span><span class=\"p\">,</span> <span class=\"nx\">setCount</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"mi\">1</span><span class=\"p\">);</span>\n</code></pre></div>"
+          "id": 4697,
+          "text": "",
+          "html": "<p>A single value representing the current state</p>",
+          "comments": "",
+          "comments_html": "<p>Not quite. One thing returned by <code>useState</code> is the value representing the\ncurrent state. However, calling <code>useState</code> always returns an array, which we\ntypically assign to two variables using array destructuring syntax:</p>\n<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">count</span><span class=\"p\">,</span> <span class=\"nx\">setCount</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">(</span><span class=\"mi\">1</span><span class=\"p\">);</span>\n</code></pre></div>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_2392",
-          "id": 2392,
-          "text": "I don't know.",
-          "html": "I don't know."
+          "id": 9042,
+          "text": "",
+          "html": "<p>I don't know.</p>",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
         }
       ],
       "variables": null,
@@ -667,56 +669,58 @@
       "id": 366271,
       "quiz_id": 53472,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 13,
+      "assessment_question_id": 632134,
+      "position": null,
       "question_name": "Controlled Components",
       "question_type": "multiple_answers_question",
-      "question_text": "Which of the following are advantages of using controlled components? Select all\nthat apply.",
+      "question_text": "<p>Which of the following are advantages of using controlled components? Select all\nthat apply.</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:Controlled Components",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/controlled-components\">Controlled Components</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_4404",
-          "id": 4404,
-          "text": "It helps us keep the amount of code we need to a minimum.",
-          "comments": "Using controlled components typically involves writing more code than uncontrolled components, but there are several advantages that can make the extra code worthwhile!",
-          "comments_html": "Using controlled components typically involves writing more code than\nuncontrolled components, but there are several advantages that can make the\nextra code worthwhile!"
+          "id": 2207,
+          "text": "",
+          "comments": "",
+          "comments_html": "<p>Using controlled components typically involves writing more code than\nuncontrolled components, but there are several advantages that can make the\nextra code worthwhile!</p>",
+          "weight": 0.0,
+          "html": "<p>It helps us keep the amount of code we need to a minimum.</p>"
         },
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_2675",
-          "id": 2675,
-          "text": "It allows us to keep the code that handles logic separate from the code that handles display of data.",
-          "html": "It allows us to keep the code that handles logic separate from the code that\nhandles display of data.",
-          "comments": "Separation of concerns is a huge benefit of using controlled forms!"
+          "id": 4002,
+          "text": "",
+          "comments": "",
+          "comments_html": "<p>Separation of concerns is a huge benefit of using controlled forms!</p>",
+          "weight": 100.0,
+          "html": "<p>It allows us to keep the code that handles logic separate from the code that\nhandles display of data.</p>"
         },
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_8852",
-          "id": 8852,
-          "text": "It allows us to ensure that input values are valid.",
-          "comments": "By using a controlled form, it easily allows us to implement validations."
+          "id": 324,
+          "text": "",
+          "comments": "",
+          "comments_html": "<p>By using a controlled form, it easily allows us to implement validations.</p>",
+          "weight": 100.0,
+          "html": "<p>It allows us to ensure that input values are valid.</p>"
         },
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_5218",
-          "id": 5218,
-          "text": "It allows us to make the input values available to other components in our app.",
-          "comments": "When using a controlled form, we are able to use state to pass the form values into other components!",
-          "comments_html": "When using a controlled form, we are able to use state to pass the form values\ninto other components!"
+          "id": 5618,
+          "text": "",
+          "comments": "",
+          "comments_html": "<p>When using a controlled form, we are able to use state to pass the form values\ninto other components!</p>",
+          "weight": 100.0,
+          "html": "<p>It allows us to make the input values available to other components in our app.</p>"
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_5278",
-          "id": 5278,
-          "text": "I don't know.",
-          "html": "I don't know."
+          "id": 5213,
+          "text": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0,
+          "html": "<p>I don't know.</p>"
         }
       ],
       "variables": null,
@@ -730,60 +734,58 @@
       "id": 366272,
       "quiz_id": 53472,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 14,
+      "assessment_question_id": 632127,
+      "position": null,
       "question_name": "Information Flow",
       "question_type": "multiple_choice_question",
-      "question_text": "Which of the following shows the correct way to set up an event listener that\npasses a value to the callback function, and prints <code>Hello World!!</code> to the\nconsole when the button is clicked?",
+      "question_text": "<p>Which of the following shows the correct way to set up an event listener that\npasses a value to the callback function, and prints <code>Hello World!!</code> to the\nconsole when the button is clicked?</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:React Information Flow",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/react-information-flow\">React Information Flow</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_6049",
-          "id": 6049,
-          "text": "function MyButton() { function handleClick(val) { console.log(val + \"!!\"); } return ( div button onClick={() = handleClick(\"Hello World\")}Click Me!/button div ); }",
-          "html": "<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">MyButton</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"nx\">val</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"nx\">val</span> <span class=\"o\">+</span> <span class=\"dl\">\"</span><span class=\"s2\">!!</span><span class=\"dl\">\"</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n  <span class=\"k\">return</span> <span class=\"p\">(</span>\n    <span class=\"p\">&lt;</span><span class=\"nt\">div</span><span class=\"p\">&gt;</span>\n      <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">()</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"dl\">\"</span><span class=\"s2\">Hello World</span><span class=\"dl\">\"</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Click Me!<span class=\"p\">&lt;/</span><span class=\"nt\">button</span><span class=\"p\">&gt;</span>\n    div&gt;\n  );\n}\n</code></pre></div>",
-          "comments": "Nice! Remember, onClick expects a callback function as an argument. By defining an arrow function here, we're able to pass a callback function that will call the handleClick function with the correct data.",
-          "comments_html": "Nice! Remember, <code>onClick</code> expects a callback function as an argument. By\ndefining an arrow function here, we're able to pass a callback function that\nwill call the <code>handleClick</code> function with the correct data."
+          "id": 1831,
+          "text": "",
+          "html": "<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">MyButton</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"nx\">val</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"nx\">val</span> <span class=\"o\">+</span> <span class=\"dl\">\"</span><span class=\"s2\">!!</span><span class=\"dl\">\"</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n  <span class=\"k\">return</span> <span class=\"p\">(</span>\n    <span class=\"p\">&lt;</span><span class=\"nt\">div</span><span class=\"p\">&gt;</span>\n      <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"p\">()</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"dl\">\"</span><span class=\"s2\">Hello World</span><span class=\"dl\">\"</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Click Me!button&gt;\n    div&gt;\n  );\n}\n</code></pre></div>",
+          "comments": "",
+          "comments_html": "<p>Nice! Remember, <code>onClick</code> expects a callback function as an argument. By\ndefining an arrow function here, we're able to pass a callback function that\nwill call the <code>handleClick</code> function with the correct data.</p>",
+          "weight": 100.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_300",
-          "id": 300,
-          "text": "function MyButton() { function handleClick(val) { console.log(val + \"!!\"); } return ( div button onClick={handleClick(\"Hello World\")}Click Me!/button div ); }",
-          "html": "<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">MyButton</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"nx\">val</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"nx\">val</span> <span class=\"o\">+</span> <span class=\"dl\">\"</span><span class=\"s2\">!!</span><span class=\"dl\">\"</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n  <span class=\"k\">return</span> <span class=\"p\">(</span>\n    <span class=\"p\">&lt;</span><span class=\"nt\">div</span><span class=\"p\">&gt;</span>\n      <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"dl\">\"</span><span class=\"s2\">Hello World</span><span class=\"dl\">\"</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Click Me!<span class=\"p\">&lt;/</span><span class=\"nt\">button</span><span class=\"p\">&gt;</span>\n    div&gt;\n  );\n}\n</code></pre></div>",
-          "comments": "Remember, onClick expects a callback function as an argument. In this example, we're invoking handleClick and passing its return value (undefined) to the onClick listener, so the behavior of this component will be to:  Immediately display Hello World!! in the console, before the button is clicked Do nothing when the button is actually clicked",
-          "comments_html": "<p>Remember, <code>onClick</code> expects a callback function as an argument. In this example,\nwe're <strong>invoking</strong> <code>handleClick</code> and passing its return value (<code>undefined</code>) to\nthe <code>onClick</code> listener, so the behavior of this component will be to:</p>\n\n<ul>\n<li>Immediately display <code>Hello World!!</code> in the console, before the button is clicked</li>\n<li>Do nothing when the button is actually clicked</li>\n</ul>"
+          "id": 9140,
+          "text": "",
+          "html": "<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">MyButton</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"nx\">val</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"nx\">val</span> <span class=\"o\">+</span> <span class=\"dl\">\"</span><span class=\"s2\">!!</span><span class=\"dl\">\"</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n  <span class=\"k\">return</span> <span class=\"p\">(</span>\n    <span class=\"p\">&lt;</span><span class=\"nt\">div</span><span class=\"p\">&gt;</span>\n      <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"dl\">\"</span><span class=\"s2\">Hello World</span><span class=\"dl\">\"</span><span class=\"p\">)</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Click Me!button&gt;\n    div&gt;\n  );\n}\n</code></pre></div>",
+          "comments": "",
+          "comments_html": "<p>Remember, <code>onClick</code> expects a callback function as an argument. In this example,\nwe're <strong>invoking</strong> <code>handleClick</code> and passing its return value (<code>undefined</code>) to\nthe <code>onClick</code> listener, so the behavior of this component will be to:</p>\n\n<ul>\n<li>Immediately display <code>Hello World!!</code> in the console, before the button is clicked</li>\n<li>Do nothing when the button is actually clicked</li>\n</ul>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_5855",
-          "id": 5855,
-          "text": "function MyButton() { function handleClick(val) { console.log(val + \"!!\"); } return ( div button onClick={handleClick}Click Me!/button div ); }",
-          "html": "<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">MyButton</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"nx\">val</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"nx\">val</span> <span class=\"o\">+</span> <span class=\"dl\">\"</span><span class=\"s2\">!!</span><span class=\"dl\">\"</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n  <span class=\"k\">return</span> <span class=\"p\">(</span>\n    <span class=\"p\">&lt;</span><span class=\"nt\">div</span><span class=\"p\">&gt;</span>\n      <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Click Me!<span class=\"p\">&lt;/</span><span class=\"nt\">button</span><span class=\"p\">&gt;</span>\n    div&gt;\n  );\n}\n</code></pre></div>",
-          "comments": "Not quite. When we click the button, the argument that will be passed to thehandleClick function is the event object, not the string Hello World as we would like. So this will log [object Object]!!",
-          "comments_html": "Not quite. When we click the button, the argument that will be passed to\nthe<code>handleClick</code> function is the <code>event</code> object, not the string <code>Hello World</code> as\nwe would like. So this will log <code>[object Object]!!</code>"
+          "id": 4374,
+          "text": "",
+          "html": "<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">MyButton</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">function</span> <span class=\"nx\">handleClick</span><span class=\"p\">(</span><span class=\"nx\">val</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"nx\">val</span> <span class=\"o\">+</span> <span class=\"dl\">\"</span><span class=\"s2\">!!</span><span class=\"dl\">\"</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n  <span class=\"k\">return</span> <span class=\"p\">(</span>\n    <span class=\"p\">&lt;</span><span class=\"nt\">div</span><span class=\"p\">&gt;</span>\n      <span class=\"p\">&lt;</span><span class=\"nt\">button</span> <span class=\"na\">onClick</span><span class=\"p\">=</span><span class=\"si\">{</span><span class=\"nx\">handleClick</span><span class=\"si\">}</span><span class=\"p\">&gt;</span>Click Me!button&gt;\n    div&gt;\n  );\n}\n</code></pre></div>",
+          "comments": "",
+          "comments_html": "<p>Not quite. When we click the button, the argument that will be passed to\nthe<code>handleClick</code> function is the <code>event</code> object, not the string <code>Hello World</code> as\nwe would like. So this will log <code>[object Object]!!</code></p>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_4613",
-          "id": 4613,
-          "text": "More than one of the above will work.",
-          "comments": "Try these out in CodeSandbox! Only one of the options will give us our desired result.",
-          "comments_html": "Try these out in <a href=\"https://codesandbox.io/s/react-new\">CodeSandbox</a>! Only one of\nthe options will give us our desired result."
+          "id": 3648,
+          "text": "",
+          "html": "<p>More than one of the above will work.</p>",
+          "comments": "",
+          "comments_html": "<p>Try these out in <a href=\"https://codesandbox.io/s/react-new\">CodeSandbox</a>! Only one of\nthe options will give us our desired result.</p>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_2222",
-          "id": 2222,
-          "text": "I don't know.",
-          "html": "I don't know."
+          "id": 9728,
+          "text": "",
+          "html": "<p>I don't know.</p>",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
         }
       ],
       "variables": null,
